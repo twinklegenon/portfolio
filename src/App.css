@@ -1,0 +1,49 @@
+.App {
+  display: flex;
+  background: linear-gradient(90deg, #2c1334 0%, #000000 50%, #0e29af 200%);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+  padding: 10rem;
+  box-sizing: border-box;
+}
+
+.MainContainer{
+  height: calc(100vh - 20rem);
+  display: flex;
+  position: relative;
+  flex-direction: row;
+
+  padding: 5rem;
+  box-sizing: border-box;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.DetailsBox {
+  background-color: rgba(242, 242, 242, 0.2) ;
+  height: 85vh;
+  width: 24vw;
+  border-radius: 10rem;
+  box-shadow: 30px 30px 30px rgba(16, 14, 14, 0.7);
+}
+
+.MainContent{
+  background-color: rgba(242, 242, 242, 0.2) ;
+  height: 85vh;
+  width: 65vw;
+  border-radius: 10rem;
+  box-shadow: 30px 30px 30px rgba(16, 14, 14, 0.7);
+}
+.navigation{
+  color: #02F0AA;
+  font-size: 30px;
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  
+}
+
+
+
