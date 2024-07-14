@@ -1,0 +1,32 @@
+/* Styles for the navigation container */
+.navigation-buttons {
+  background-color: rgba(255, 255, 255, 0.141);
+  height: 10vh;
+  width: 25vw;
+  border-radius: 10rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+  align-items: center;
+  position: absolute;
+  right: 25rem;
+  justify-content: center;
+}
+
+/* Styles for the navigation links */
+.navigation-buttons a {
+  color: rgb(255, 255, 255); /* Set your default link color here */
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  font-size: 4rem;
+}
+
+.navigation-buttons a:hover {
+  color: rgb(255, 0, 255); /* Color when hovered */
+}
+
+.navigation-buttons a.active {
+  color: rgb(0, 255, 229); /* Color when active */
+  background-color: rgba(255, 255, 255, 0); /* Background color when active */
+}

@@ -1,0 +1,139 @@
+/*DETAILS BOX*/
+.DetailsBox {
+  background-color: rgba(242, 242, 242, 0.122) ;
+  height: 85vh;
+  width: 18vw;
+  border-radius: 10rem;
+  box-shadow: 30px 30px 30px rgba(16, 14, 14, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  justify-content: center; /* Center items horizontally */;
+  margin-left: 0rem;
+
+}
+
+.IDBox {
+  background-color: rgba(228, 23, 23, 0) ;
+  height:30vh;
+  width: 14vw;
+  border-radius: 10rem;
+  display: flex;
+  margin-top: 10rem;
+  margin-left: 3rem;
+  position: absolute;
+}
+.id-pic {
+  width: 13vw;
+  height: 27vh;
+}
+
+.name {
+  background-color: rgba(224, 10, 10, 0) ;
+  height:5vh;
+  width: 15vw;
+  border-radius: 10rem;
+  margin-top: 62rem;
+  color: #dae5e2f7;
+  font-size: 7rem;
+  text-align: center;
+  position: absolute;
+}
+
+.bio {
+  background-color: rgba(255, 255, 255, 0.371) ;
+  height:2.5vh;
+  width: 14vw;
+  border-radius: 10rem;
+  margin-top: 72rem;
+  color: #ffffffc8;
+  font-size: 3rem;
+  text-align: center;
+  position: absolute;
+}
+
+.linkedin{
+  background-color: rgba(231, 223, 223, 0.371) ;
+  height:5vh;
+  width: 2.5vw;
+  border-radius: 2rem;
+  margin-top: 82rem;
+  margin-right: 50rem;
+  margin-bottom: 2rem;
+  position: absolute;
+}
+
+
+.Text1{  
+  margin-top: 84rem;
+  margin-left: 15rem;
+  color: #ffffff;
+  font-size: 3.0rem;
+  position: absolute;
+} 
+
+ .name:hover, .Text1:hover, .Text2:hover, .Text3:hover, .Text4:hover {
+  color: #f200ff;
+}
+
+.email {
+  background-color: rgba(231, 223, 223, 0.371) ;
+  height:5vh;
+  width: 2.5vw;
+  border-radius: 2rem;
+  margin-top: 96rem;
+  margin-right: 50rem;
+  position: absolute;
+}
+
+.Text2{  
+  margin-top: 98rem;
+  margin-left: 0rem;
+  color: #ffffff;
+  font-size: 3.0rem;
+  position: absolute;
+} 
+
+.github {
+  background-color: rgba(231, 223, 223, 0.371) ;
+  height:5vh;
+  width: 2.5vw;
+  border-radius: 2rem;
+  margin-top: 110rem;
+  margin-right: 50rem;
+}
+
+.Text3{  
+  margin-top: 112rem;
+  margin-left: 0em;
+  color: #ffffff;
+  font-size: 3.0rem;
+  position: absolute;
+} 
+
+.fb {
+  background-color: rgba(231, 223, 223, 0.371) ;
+  height:5vh;
+  width: 2.5vw;
+  border-radius: 2rem;
+  margin-top: 124rem;
+  margin-right: 50rem;
+  position: absolute;
+}
+
+.Text4{  
+  margin-top: 126rem;
+  margin-left: 3rem;
+  color: #ffffff;
+  font-size: 3.0rem;
+  position: absolute;
+} 
+
+.loc {
+  
+  height:5vh;
+  width: 2.5vw;
+  border-radius: 2rem;
+  margin-top: 138rem;
+  margin-right: 40rem;
+  position: absolute;
+}

@@ -1,14 +1,16 @@
+
 .App {
   display: flex;
   background: linear-gradient(90deg, #2c1334 0%, #000000 50%, #0e29af 200%);
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   padding: 10rem;
   box-sizing: border-box;
 }
 
+/*MAIN CONTAINER*/
 .MainContainer{
   height: calc(100vh - 20rem);
   display: flex;
@@ -17,33 +19,400 @@
 
   padding: 5rem;
   box-sizing: border-box;
-  gap: 5rem;
+  gap: 10rem;
   justify-content: center;
+  overflow: hidden;
 }
 
-.DetailsBox {
-  background-color: rgba(242, 242, 242, 0.2) ;
-  height: 85vh;
-  width: 24vw;
-  border-radius: 10rem;
-  box-shadow: 30px 30px 30px rgba(16, 14, 14, 0.7);
-}
 
+/*MAIN CONTENT*/
 .MainContent{
-  background-color: rgba(242, 242, 242, 0.2) ;
+  background-color: rgba(242, 242, 242, 0) ;
   height: 85vh;
-  width: 65vw;
+  width: 70vw;
   border-radius: 10rem;
-  box-shadow: 30px 30px 30px rgba(16, 14, 14, 0.7);
-}
-.navigation{
-  color: #02F0AA;
-  font-size: 30px;
   display: flex;
-  align-items: flex-end;
-  text-align: end;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: auto;
+  scroll-behavior: smooth;
+
+}
+
+/* Custom scrollbar styles */
+.MainContent::-webkit-scrollbar {
+  width: 0.5rem; /* Width of the scrollbar */
+}
+
+.MainContent::-webkit-scrollbar-track {
+  background: #9b9a9b; /* Track color */
+  border-radius: 10rem; /* Rounded corners for the track */
+}
+
+.MainContent::-webkit-scrollbar-thumb {
+  background: #753f84; /* Thumb color */
+  border-radius: 10rem; /* Rounded corners for the thumb */
+}
+
+.MainContent::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+
+.aboutSection {
+  background-color: #00f6ac00 ;
+  height: 82vh;
+  width: 68vw;
+  border-radius: 12rem;
+  margin-top: 20rem;
+}
+
+.aboutmepanel{
+  color: #fafafa;
+  font-size: 8rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
   
 }
 
+.rect {
+  background-color: #00F6AC ;
+  height: 1vh;
+  width: 8vw;
+  border-radius: 10rem;
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
 
+.paraAbout {
+  background-color: rgba(242, 242, 242, 0) ;
+  height: 20vh;
+  width: 62vw;
+  border-radius: 2rem;
+  margin-left: 8rem;
+  margin-top: 4rem;
+  font-family: arial;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.whatimdoing {
+  color: #fafafa;
+  font-size: 8rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
+
+}
+
+.boxes {
+  background-color: rgba(242, 242, 242, 0) ;
+  height: 34vh;
+  width: 66vw;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  background-color: rgba(255, 255, 255, 0.123);
+  height: 15vh;
+  width: 19vw;
+  border-radius: 2rem;
+  margin-left: 8rem;
+}
+
+
+/*RESUME PART*/
+
+.resume-container {
+  background-color: #00f6ac00 ;
+  height: 82vh;
+  width: 68vw;
+  border-radius: 12rem;
+  margin-top: 10rem;
+}
+
+.resumepanel{
+  color: #fafafa;
+  font-size: 8rem;
+  margin-top: 8rem;
+  margin-left: 8rem;
+}
+.resumeSec {
+  background-color: rgba(252, 252, 252, 0) ;
+  height: 68vh;
+  width: 48vw;
+  margin-left: 8rem;
+}
+
+.dl {
+  height: 3vh;
+  width: 1.5vw;
+  margin-left: 6rem;
+}
+
+.experience {
+  color: #fafafa;
+  font-size: 6rem;
+  margin-top: 5rem;
+  margin-left: 0rem;
+ font-weight: bold;
+}
+
+.education {
+  color: #fafafa;
+  font-size: 6rem;
+  margin-top: 8rem;
+  margin-left: 0rem;
+  font-weight: bold;
+
+}
+
+
+
+.tech {
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 4rem;
+  font-weight: bold;
+  margin-left: 8rem;
+}
+
+.yr1{
+  color: #10e198;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+
+}
+
+.equitable{
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+
+}
+
+.info{
+  color: #fafafa;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+
+}
+
+
+.college {
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  margin-left: 8rem;
+}
+.yr2{
+  color: #10e198;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+
+.TIP1 {
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 0rem;
+  margin-left: 8rem;
+}
+
+
+.stem {
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  margin-left: 8rem;
+}
+.yr3{
+  color: #10e198;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+}
+.TIP2{
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 0rem;
+  margin-left: 8rem;
+
+}
+
+
+.jhs {
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  margin-left: 8rem;
+}
+.yr4{
+  color: #10e198;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  
+}
+.grace{
+  color: #fafafa;
+  font-size: 4rem;
+  margin-top: 0rem;
+  margin-left: 8rem;
+
+}
+
+/*PROJECTS PANEL*/
+.NavTab {
+  background-color: rgb(213, 28, 28) ;
+  height: 5vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  margin-top: 30rem;
+  margin-left: 4rem;
+  font-size: 4rem;
+  color: #ffffff;
+
+}
+.NavTab a {
+  color: rgb(255, 255, 255); /* Set your default link color here */
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.NavTab a:hover {
+  color: rgb(255, 0, 255); /* Color when hovered */
+}
+
+.NavTab a.active {
+  color: rgb(0, 255, 229); /* Color when clicked (active) */
+}
+
+.ProjPanel{
+  background-color: rgba(242, 242, 242, 0) ;
+  height: 82vh;
+  width: 66vw;
+  margin-top: 10rem;
+  margin-left: 8rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+
+.pan1, .pan2, .pan3, .pan4, .pan5, .pan5, .pan6, .pan7, .pan8 {
+  background-color: rgba(255, 255, 255, 0.211);
+  height: 20vh;
+  width: 15vw;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+/*CONTACT PANEL*/
+
+.mainCon {
+  background-color: rgba(242, 242, 242, 0) ;
+  height: 82vh;
+  width: 66vw;
+  border-radius: 2rem;
+  margin-left: 8rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.FNForm, .emailForm {
+  background-color: rgba(242, 242, 242, 0.221) ;
+  height: 2vh;
+  width: 24vw;
+  border-radius: 2rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.messageForm {
+  background-color: rgba(242, 242, 242, 0.221) ;
+  height: 30vh;
+  width: 24vw;
+  border-radius: 2rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border: 1px solid #cccccc;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-family: Arial
+}
+
+.sendButton {
+  height: 10rem;
+  width: 40rem;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  background-color: #f200ff;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 4rem;
+  border-radius: 7rem;
+  margin-left: 68rem;
+}
+
+.sendButton:hover {
+  background-color: #00ffc8;
+}
+
+
+.locationBox {
+  background-color: rgba(242, 242, 242, 0.221);
+  height: 59vh;
+  width: 32.5vw;
+  border-radius: 2rem;
+  margin-left: 4rem;
+  border: 1px solid #cccccc;
+  font-size: 4rem;
+  font-family: Arial;
+  position: relative;
+  overflow: hidden;
+}
+
+.mapbox {
+  height: 380px;
+  border-radius: 18px;
+}
+
+.mapbox figure { height: 100%; }
+
+.mapbox iframe {
+  width: 120rem;
+  height: 100rem;
+  border: none;
+  filter: grayscale(1) invert(1);
+}
 
